@@ -240,10 +240,13 @@ document.addEventListener('DOMContentLoaded', function() {
 		model_check_customer.classList.remove('show_model');
 		btn_check_customer.style.display = 'block';
 		btn_add_customer.style.display = 'none';
+		sodt.value = '';
+		tenkhachhang.value= '';
+		sodt.readOnly = false;
 	})
 
 	btn_check_customer.addEventListener('click', function() {
-		const regexNameCustomer = /^[a-zA-Z\u00C0-\u017F\s]+$/;
+		const regexNameCustomer =/^[a-zA-Z\u00C0-\u024F\u1E00-\u1EFF\s]+$/;
 		const regexNumberPhone = /^\d+$/;
 
 		//kiểm tra sdt hợp lệ

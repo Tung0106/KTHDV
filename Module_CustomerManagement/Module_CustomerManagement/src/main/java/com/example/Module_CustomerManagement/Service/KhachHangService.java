@@ -70,6 +70,8 @@ public class KhachHangService {
 	}
 	
 	public KhachHang addCustomer(KhachHang khachHang) {
+		khachHang.setTongDiemTichLuy(0);
+		khachHang.setTongTienTichLuy(BigDecimal.valueOf(0));
 		return repo.save(khachHang);
 	}
 	

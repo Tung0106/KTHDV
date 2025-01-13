@@ -3,6 +3,7 @@ package com.example.CafeShopManager.entities;
 import java.math.BigDecimal;
 import java.sql.Timestamp;
 import java.time.Instant;
+import java.time.LocalDateTime;
 
 public class KhachHang {
 	private String soDT; 
@@ -10,9 +11,9 @@ public class KhachHang {
 	private BigDecimal tongTienTichLuy; 
 	private int tongDiemTichLuy; 
 	
-	private Timestamp thoiGianTao; 
+	private LocalDateTime thoiGianTao; 
 	
-	private Timestamp thoiGianCapNhat;
+	private LocalDateTime thoiGianCapNhat;
 
 	public String getSoDT() {
 		return soDT;
@@ -46,19 +47,19 @@ public class KhachHang {
 		this.tongDiemTichLuy = tongDiemTichLuy;
 	}
 
-	public Timestamp getThoiGianTao() {
+	public LocalDateTime getThoiGianTao() {
 		return thoiGianTao;
 	}
 
 	public void setThoiGianTao() {
-		this.thoiGianTao = Timestamp.from(Instant.now());
+		this.thoiGianTao = LocalDateTime.now();
 	}
 
-	public Timestamp getThoiGianCapNhat() {
+	public LocalDateTime getThoiGianCapNhat() {
 		return thoiGianCapNhat;
 	}
 
 	public void setThoiGianCapNhat() {
-		this.thoiGianCapNhat = Timestamp.from(Instant.now());
+		this.thoiGianCapNhat = LocalDateTime.now();
 	} 
 }
