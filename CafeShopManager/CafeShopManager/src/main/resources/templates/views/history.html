@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Lịch sử</title>
+<link rel="stylesheet" type="text/css" href="/css/style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="/js/index.js"></script>
+</head>
+<body>
+	<div id="container">
+		<div th:replace="views/menuLeft"></div>
+		<div id="container_header_body">
+			<div th:replace="views/header"></div>
+			<div id="wrapper">
+				<div id="wrapper_menu">
+					<div id="wrapper_title_search">
+						<h2>Lịch sử</h2>
+						<input type="text" id="timkiem_trangchu" placeholder="Tìm theo tên...">
+					</div>
+				</div>
+				<div id="wrapper_order">
+				
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
